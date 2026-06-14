@@ -1,7 +1,8 @@
 // INSTALL EVENT
 self.addEventListener("install", event => {
+  self.skipWaiting(); // 🔥 Force new SW to activate immediately
   event.waitUntil(
-    caches.open("nyovals-cache-v2").then(cache => {
+    caches.open("nyovals-cache-v3").then(cache => {
       return cache.addAll([
         "./",
         "index.html",
@@ -13,6 +14,11 @@ self.addEventListener("install", event => {
       ]);
     })
   );
+});
+
+// ACTIVATE EVENT
+self.addEventListener("activate", event => {
+  clients.claim(); // 🔥 Take control of all pages immediately
 });
 
 // FETCH EVENT
