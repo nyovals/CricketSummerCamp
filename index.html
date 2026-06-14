@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b7a2a">
+
+  <meta charset="UTF-8">
+  <title>NY Ovals Cricket Summer Camp</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    /* HEADER */
+    header {
+      background: #0b7a2a;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      width: 140px;
+      height: auto;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    /* NAVIGATION BAR */
+    nav {
+      background: #055a1c;
+      padding: 15px;
+      text-align: center;
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 40px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* DROPDOWN MENU */
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: white;
+      min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      z-index: 10;
+      text-align: left;
+    }
+
+    .dropdown-content a {
+      color: #055a1c;
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .dropdown-content a:hover {
+      background: #e6e6e6;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* GALLERY */
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery-container img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* MAIN CONTENT SECTIONS */
+    .section {
+      background: white;
+      margin: 25px auto;
+      padding: 25px;
+      width: 90%;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0b7a2a;
+      margin-top: 0;
+    }
+
+    ul {
+      margin-left: 20px;
+      line-height: 1.6;
+    }
+
+    /* FORM STYLES */
+    form label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background: #0b7a2a;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    form button:hover {
+      background: #055a1c;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0b7a2a;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="NYOValslogo.png" alt="NY Ovals Cricket Logo">
+    <h1>NY Ovals Cricket Academy</h1>
+    <div style="width:140px;"></div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About Us</a>
+
+    <div class="dropdown">
+      <a href="#camp">Summer Camp ▾</a>
+      <div class="dropdown-content">
+        <a href="#camp-details">Camp Details</a>
+        <a href="#who">Eligibility</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#fees">Fees</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#outcomes">What to Expect</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#waiver">Waiver & Registration</a>
+        <a href="#payment">Payment</a>
+      </div>
+    </div>
+
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT US -->
+  <div id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      The <strong>NY Ovals Cricket Summer Camp</strong> is a fun, structured, and professionally coached program designed to help young athletes learn and improve their cricket skills.
+    </p>
+    <p>
+      Our mission is to teach cricket fundamentals, build confidence, and inspire a lifelong love for the sport.
+    </p>
+  </div>
+
+  <!-- SUMMER CAMP SECTIONS -->
+  <div id="camp-details" class="section">
+    <h2>Camp Details</h2>
+    <p>The NY Ovals Summer Camp is a 4‑week program designed to build cricket fundamentals and confidence.</p>
+  </div>
+
+  <div id="who" class="section">
+    <h2>Who Can Participate?</h2>
+    <ul>
+      <li>7–9 years: Basic cricket introduction</li>
+      <li>10–12 years: Skill development</li>
+      <li>13+ years: Advanced training</li>
+    </ul>
+  </div>
+
+  <div id="schedule" class="section">
+    <h2>Schedule</h2>
+    <ul>
+      <li>4 weeks</li>
+      <li>Tuesday, Wednesday, Thursday</li>
+      <li>3 hours per session</li>
+    </ul>
+  </div>
+
+  <!-- FEES -->
+  <div id="fees" class="section">
+    <h2>Fees</h2>
+
+    <h3>Early Bird Registration</h3>
+    <p>
+      <strong>$799.99</strong><br>
+      <em>Applicable for registrations before <strong>July 1st</strong></em>
+    </p>
+
+    <h3>Standard Registration</h3>
+    <p>
+      <strong>$850.00</strong><br>
+      Applies to all registrations on or after July 1st.
+    </p>
+
+    <h3>Camp Start Date</h3>
+    <p><strong>July 14th</strong></p>
+
+    <h3>What’s Included</h3>
+    <ul>
+      <li>All 4 weeks of training</li>
+      <li>Professional coaching</li>
+      <li>Use of shared equipment</li>
+      <li>Camp materials</li>
+    </ul>
+  </div>
+
+  <div id="equipment" class="section">
+    <h2>Equipment</h2>
+    <ul>
+      <li>Cricket bat (optional)</li>
+      <li>Helmet, pads, gloves</li>
+      <li>Sports clothing</li>
+    </ul>
+  </div>
+
+  <div id="outcomes" class="section">
+    <h2>What to Expect</h2>
+    <ul>
+      <li>Improved batting, bowling, fielding</li>
+      <li>Better teamwork and game awareness</li>
+      <li>Confidence and discipline</li>
+    </ul>
+  </div>
+
+  <!-- GALLERY -->
+  <div id="gallery" class="section">
+    <h2>Camp Photo Gallery</h2>
+    <p>Here are some example photos from previous NY Ovals Cricket training sessions.</p>
+
+    <div class="gallery-container">
+      <img src="images/image1.jpg" alt="Cricket Training 1">
+      <img src="images/image2.jpg" alt="Cricket Training 2">
+      <img src="images/image3.jpg" alt="Cricket Training 3">
+      <img src="images/image4.jpg" alt="Cricket Training 4">
+      <!-- <img src="images/image5.jpg" alt="Cricket Training 5"> -->
+      <!-- <img src="images/image6.jpg" alt="Cricket Training 6"> -->
+    </div>
+  </div>
+
+  <!-- WAIVER -->
+  <div id="waiver" class="section">
+    <h2>Waiver & Registration</h2>
+    <form>
+
+      <label>Participant Name</label>
+      <input type="text" required>
+
+      <label>Parent/Guardian Name</label>
+      <input type="text">
+
+      <label>Email</label>
+      <input type="email" required>
+
+      <label>Phone</label>
+      <input type="text" required>
+
+      <label>Emergency Contact</label>
+      <input type="text" required>
+
+      <label>Emergency Phone</label>
+      <input type="text" required>
+
+      <label>Waiver Agreement</label>
+      <textarea rows="14" readonly>
+I, the undersigned participant or parent/guardian of the participant, understand and acknowledge that cricket is a physical sport involving running, throwing, batting, catching, and other athletic activities that may pose a risk of injury. By enrolling in the NY Ovals Cricket Summer Camp, I voluntarily assume all risks associated with participation, including but not limited to sprains, fractures, collisions, heat-related illness, or other injuries.
+
+I agree to release, indemnify, and hold harmless NY Ovals Cricket Academy, its coaches, staff, volunteers, representatives, and affiliates from any and all liability, claims, demands, or causes of action arising out of participation in camp activities.
+
+I certify that the participant is physically fit to take part in athletic activities. I authorize NY Ovals Cricket Academy staff to administer basic first aid and seek emergency medical treatment if necessary.
+
+I grant permission for NY Ovals Cricket Academy to use photos or videos of the participant for promotional or educational purposes.
+
+I understand that all fees are non-refundable except in cases of program cancellation by NY Ovals Cricket Academy.
+
+By checking the box below, I acknowledge that I have read, understood, and agree to all terms of this waiver and release.
+      </textarea>
+
+      <label>
+        <input type="checkbox" required> I agree to the waiver terms.
+      </label>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </div>
+
+  <!-- PAYMENT -->
+  <div id="payment" class="section">
+    <h2>Camp Payment</h2>
+    <p>Camp begins on <strong>July 14th</strong>. Please complete payment to secure your child's spot.</p>
+
+    <form>
+
+      <label>Participant Name</label>
+      <input type="text" required>
+
+      <label>Parent/Guardian Email</label>
+      <input type="email" required>
+
+      <label>Select Fee Type</label>
+      <select id="fee_type" required onchange="updateAmount()">
+        <option value="">Select</option>
+        <option value="699.99">Early Bird — $699.99 (before July 1st)</option>
+        <option value="850.00">Standard — $850.00 (on or after July 1st)</option>
+      </select>
+
+      <label>Payment Amount (USD)</label>
+      <input type="text" id="amount" readonly>
+
+      <label>Payment Method</label>
+      <select required>
+        <option value="">Select a method</option>
+        <option value="credit_card">Credit/Debit Card</option>
+        <option value="zelle">Zelle</option>
+        <option value="paypal">PayPal</option>
+      </select>
+
+      <p><strong>Zelle:</strong> Send to <strong>youremail@domain.com</strong><br>
+      Include participant name in the memo.</p>
+
+      <button type="submit">Submit Payment</button>
+    </form>
+
+    <script>
+      function updateAmount() {
+        const fee = document.getElementById("fee_type").value;
+        document.getElementById("amount").value = fee;
+      }
+    </script>
+  </div>
+
+  <!-- CONTACT -->
+ <div id="contact" class="section">
+  <h2>Contact Us</h2>
+
+  <ul>
+    <li>Head Coach: John Smith — (555) 123‑4567</li>
+    <li>Assistant Coach: Sarah Johnson — (555) 987‑6543</li>
+    <li>Director: Michael Patel — (555) 222‑8899</li>
+  </ul>
+
+  <p><strong>Email:</strong> nycaptialsportsllc@gmail.com</p>
+
+  <h3>Camp Location</h3>
+  <p>
+    <strong>NY Ovals Cricket Academy</strong><br>
+   	4281 Amsterdam Rd<br>
+    Schenectady, NY,
+United States, 12302
+  </p>
+</div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 NY Ovals Cricket Academy — All Rights Reserved
+  </footer>
+
+<<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log('Service worker registered', reg))
+      .catch(err => console.log('Service worker registration failed', err));
+  }
+</script>
+
+</body>
+</html>
