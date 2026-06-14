@@ -1,7 +1,7 @@
 {
   "name": "NY Ovals Cricket Academy",
   "short_name": "NY Ovals",
-  "start_url": "index.html",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#0b7a2a",
   "theme_color": "#0b7a2a",
