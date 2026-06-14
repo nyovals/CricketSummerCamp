@@ -6,7 +6,7 @@ self.addEventListener("install", event => {
       return cache.addAll([
         "./",
         "index.html",
-        "images/NYOvalsLogo.png",
+        "images/LOGO.png",
         "images/image1.jpg",
         "images/image2.jpg",
         "images/image3.jpg",
