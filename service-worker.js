@@ -1,7 +1,7 @@
 // INSTALL EVENT
 self.addEventListener("install", event => {
   event.waitUntil(
-    caches.open("nyovals-cache").then(cache => {
+    caches.open("nyovals-cache-v2").then(cache => {
       return cache.addAll([
         "./",
         "index.html",
