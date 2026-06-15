@@ -319,28 +319,33 @@
   <!-- WAIVER -->
   <div id="waiver" class="section">
     <h2>Waiver & Registration</h2>
-    <form>
+   <form action="https://formsubmit.co/gatparajini@gmail.com" method="POST">
 
-      <label>Participant Name</label>
-      <input type="text" required>
+  <!-- Hidden FormSubmit Settings -->
+  <input type="hidden" name="_subject" value="New Summer Camp Registration">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
 
-      <label>Parent/Guardian Name</label>
-      <input type="text">
+  <label>Participant Name</label>
+  <input type="text" name="participant_name" required>
 
-      <label>Email</label>
-      <input type="email" required>
+  <label>Parent/Guardian Name</label>
+  <input type="text" name="parent_name">
 
-      <label>Phone</label>
-      <input type="text" required>
+  <label>Email</label>
+  <input type="email" name="email" required>
 
-      <label>Emergency Contact</label>
-      <input type="text" required>
+  <label>Phone</label>
+  <input type="text" name="phone" required>
 
-      <label>Emergency Phone</label>
-      <input type="text" required>
+  <label>Emergency Contact</label>
+  <input type="text" name="emergency_contact" required>
 
-      <label>Waiver Agreement</label>
-      <textarea rows="14" readonly>
+  <label>Emergency Phone</label>
+  <input type="text" name="emergency_phone" required>
+
+  <label>Waiver Agreement</label>
+  <textarea rows="14" readonly name="waiver_text">
 I, the undersigned participant or parent/guardian of the participant, understand and acknowledge that cricket is a physical sport involving running, throwing, batting, catching, and other athletic activities that may pose a risk of injury. By enrolling in the NY Ovals Cricket Summer Camp, I voluntarily assume all risks associated with participation, including but not limited to sprains, fractures, collisions, heat-related illness, or other injuries.
 
 I agree to release, indemnify, and hold harmless NY Ovals Cricket Academy, its coaches, staff, volunteers, representatives, and affiliates from any and all liability, claims, demands, or causes of action arising out of participation in camp activities.
@@ -352,52 +357,66 @@ I grant permission for NY Ovals Cricket Academy to use photos or videos of the p
 I understand that all fees are non-refundable except in cases of program cancellation by NY Ovals Cricket Academy.
 
 By checking the box below, I acknowledge that I have read, understood, and agree to all terms of this waiver and release.
-      </textarea>
+  </textarea>
 
-      <label>
-        <input type="checkbox" required> I agree to the waiver terms.
-      </label>
+  <label>
+    <input type="checkbox" name="waiver_agreed" value="Yes" required>
+    I agree to the waiver terms.
+  </label>
 
-      <button type="submit">Submit Registration</button>
-    </form>
+  <button type="submit">Submit Registration</button>
+</form>
+
   </div>
 
   <!-- PAYMENT -->
   <div id="payment" class="section">
     <h2>Camp Payment</h2>
     <p>Camp begins on <strong>July 14th</strong>. Please complete payment to secure your child's spot.</p>
+<form action="https://formsubmit.co/nycapitalsportsllc@gmail.com" method="POST">
 
-    <form>
+  <!-- Hidden FormSubmit Settings -->
+  <input type="hidden" name="_subject" value="New Camp Payment Submission">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
 
-      <label>Participant Name</label>
-      <input type="text" required>
+  <label>Participant Name</label>
+  <input type="text" name="participant_name" required>
 
-      <label>Parent/Guardian Email</label>
-      <input type="email" required>
+  <label>Parent/Guardian Email</label>
+  <input type="email" name="parent_email" required>
 
-      <label>Select Fee Type</label>
-      <select id="fee_type" required onchange="updateAmount()">
-        <option value="">Select</option>
-        <option value="699.99">Early Bird — $699.99 (before July 1st)</option>
-        <option value="850.00">Standard — $850.00 (on or after July 1st)</option>
-      </select>
+  <label>Select Fee Type</label>
+  <select id="fee_type" name="fee_type" required onchange="updateAmount()">
+    <option value="">Select</option>
+    <option value="650">Early Bird — $650 (before July 1st)</option>
+    <option value="720">Standard — $720 (on or after July 1st)</option>
+    <option value="225">Weekly — $225 per week</option>
+  </select>
 
-      <label>Payment Amount (USD)</label>
-      <input type="text" id="amount" readonly>
+  <label>Payment Amount (USD)</label>
+  <input type="text" id="amount" name="amount" readonly>
 
-      <label>Payment Method</label>
-      <select required>
-        <option value="">Select a method</option>
-        <option value="credit_card">Credit/Debit Card</option>
-        <option value="zelle">Zelle</option>
-        <option value="paypal">PayPal</option>
-      </select>
+  <label>Payment Method</label>
+  <select name="payment_method" required>
+    <option value="">Select a method</option>
+    <option value="credit_card">Credit/Debit Card</option>
+    <option value="zelle">Zelle</option>
+    <option value="paypal">PayPal</option>
+  </select>
 
-      <p><strong>Zelle:</strong> Send to <strong>youremail@domain.com</strong><br>
-      Include participant name in the memo.</p>
+  <p><strong>Zelle:</strong> Send to <strong>gatparajini@gmail.com</strong><br>
+  Include participant name in the memo.</p>
 
-      <button type="submit">Submit Payment</button>
-    </form>
+  <button type="submit">Submit Payment</button>
+</form>
+
+<script>
+  function updateAmount() {
+    const fee = document.getElementById("fee_type").value;
+    document.getElementById("amount").value = fee;
+  }
+</script>
 
     <script>
       function updateAmount() {
