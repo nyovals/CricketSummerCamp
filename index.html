@@ -392,6 +392,7 @@ By checking the box below, I acknowledge that I have read, understood, and agree
     <option value="650">Early Bird — $650 (before July 1st)</option>
     <option value="720">Standard — $720 (on or after July 1st)</option>
     <option value="225">Weekly — $225 per week</option>
+      <option value="manual">Enter Amount Manually</option>
   </select>
 
   <label>Payment Amount (USD)</label>
@@ -410,20 +411,22 @@ By checking the box below, I acknowledge that I have read, understood, and agree
 
   <button type="submit">Submit Payment</button>
 </form>
-
+    
 <script>
   function updateAmount() {
     const fee = document.getElementById("fee_type").value;
-    document.getElementById("amount").value = fee;
+    const amountField = document.getElementById("amount");
+
+    if (fee === "manual") {
+      amountField.value = "";
+      amountField.readOnly = false;
+    } else {
+      amountField.value = fee;
+      amountField.readOnly = true;
+    }
   }
 </script>
 
-    <script>
-      function updateAmount() {
-        const fee = document.getElementById("fee_type").value;
-        document.getElementById("amount").value = fee;
-      }
-    </script>
   </div>
 
   <!-- CONTACT -->
