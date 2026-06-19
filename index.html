@@ -11,8 +11,7 @@
   <meta name="theme-color" content="#0b7a2a">
 
   <meta charset="UTF-8">
- <title>NY Ovals</title>
-<h2>Cricket Summer Camp</h2>h2>
+  <title>NY Ovals</title>
 
   <style>
     body {
@@ -30,14 +29,14 @@
       align-items: center;
       justify-content: space-between;
     }
-    
-   header img {
-  height: 100px;
-  width: auto;
-  border-radius: 50%;       /* rounds the corners */
-  object-fit: contain;
-  background-color: transparent;
-}
+
+    header img {
+      height: 100px;
+      width: auto;
+      border-radius: 50%;
+      object-fit: contain;
+      background-color: transparent;
+    }
 
     /* NAVIGATION BAR */
     nav {
@@ -258,7 +257,7 @@
       <em>Applies to all registrations on or after July 1st</em>
     </p>
 
-     <h3>Wekly Basis</h3>
+    <h3>Weekly Basis</h3>
     <p>
       <strong>$225 per week</strong><br>
     </p>
@@ -266,7 +265,7 @@
     <h3>Camp Start Date</h3>
     <em>July 14, 2026</em>
 
-    <h3>Regisration Deadline</h3>
+    <h3>Registration Deadline</h3>
     <em>July 6, 2026</em>
 
     <h3>What’s Included</h3>
@@ -278,6 +277,7 @@
     </ul>
   </div>
 
+  <!-- EQUIPMENT -->
   <div id="equipment" class="section">
     <h2>Equipment</h2>
     <ul>
@@ -287,19 +287,20 @@
     </ul>
   </div>
 
- <div id="outcomes" class="section">
-  <h2>What to Expect at Cricket Summer Camp (Ages 7–15)</h2>
-  <ul>
-    <li>Better batting, bowling, and fielding skills.</li>
-    <li>Learning teamwork and how to play as a group.</li>
-    <li>Understanding rules, positions, and basic game strategy.</li>
-    <li>Fun fitness activities that build speed and coordination.</li>
-    <li>Growing confidence and learning good sports habits.</li>
-    <li>Making new friends and enjoying friendly matches.</li>
-    <li>A safe, supportive environment with trained coaches.</li>
-    <li>End-of-camp games, challenges, and certificates.</li>
-  </ul>
-</div>
+  <!-- OUTCOMES -->
+  <div id="outcomes" class="section">
+    <h2>What to Expect at Cricket Summer Camp (Ages 7–15)</h2>
+    <ul>
+      <li>Better batting, bowling, and fielding skills.</li>
+      <li>Learning teamwork and how to play as a group.</li>
+      <li>Understanding rules, positions, and basic game strategy.</li>
+      <li>Fun fitness activities that build speed and coordination.</li>
+      <li>Growing confidence and learning good sports habits.</li>
+      <li>Making new friends and enjoying friendly matches.</li>
+      <li>A safe, supportive environment with trained coaches.</li>
+      <li>End-of-camp games, challenges, and certificates.</li>
+    </ul>
+  </div>
 
   <!-- GALLERY -->
   <div id="gallery" class="section">
@@ -311,41 +312,39 @@
       <img src="images/image2.jpg" alt="Cricket Training 2">
       <img src="images/image3.jpg" alt="Cricket Training 3">
       <img src="images/image4.jpg" alt="Cricket Training 4">
-      <!-- <img src="images/image5.jpg" alt="Cricket Training 5"> -->
-      <!-- <img src="images/image6.jpg" alt="Cricket Training 6"> -->
     </div>
   </div>
 
   <!-- WAIVER -->
   <div id="waiver" class="section">
     <h2>Waiver & Registration</h2>
-   <form action="https://formsubmit.co/gatparajini@gmail.com" method="POST">
 
-  <!-- Hidden FormSubmit Settings -->
-  <input type="hidden" name="_subject" value="New Summer Camp Registration">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
+    <form action="https://formsubmit.co/gatparajini@gmail.com" method="POST">
 
-  <label>Participant Name</label>
-  <input type="text" name="participant_name" required>
+      <input type="hidden" name="_subject" value="New Summer Camp Registration">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
 
-  <label>Parent/Guardian Name</label>
-  <input type="text" name="parent_name">
+      <label>Participant Name</label>
+      <input type="text" name="participant_name" required>
 
-  <label>Email</label>
-  <input type="email" name="email" required>
+      <label>Parent/Guardian Name</label>
+      <input type="text" name="parent_name">
 
-  <label>Phone</label>
-  <input type="text" name="phone" required>
+      <label>Email</label>
+      <input type="email" name="email" required>
 
-  <label>Emergency Contact</label>
-  <input type="text" name="emergency_contact" required>
+      <label>Phone</label>
+      <input type="text" name="phone" required>
 
-  <label>Emergency Phone</label>
-  <input type="text" name="emergency_phone" required>
+      <label>Emergency Contact</label>
+      <input type="text" name="emergency_contact" required>
 
-  <label>Waiver Agreement</label>
-  <textarea rows="14" readonly name="waiver_text">
+      <label>Emergency Phone</label>
+      <input type="text" name="emergency_phone" required>
+
+      <label>Waiver Agreement</label>
+      <textarea rows="14" readonly name="waiver_text">
 I, the undersigned participant or parent/guardian of the participant, understand and acknowledge that cricket is a physical sport involving running, throwing, batting, catching, and other athletic activities that may pose a risk of injury. By enrolling in the NY Ovals Cricket Summer Camp, I voluntarily assume all risks associated with participation, including but not limited to sprains, fractures, collisions, heat-related illness, or other injuries.
 
 I agree to release, indemnify, and hold harmless NY Ovals Cricket Academy, its coaches, staff, volunteers, representatives, and affiliates from any and all liability, claims, demands, or causes of action arising out of participation in camp activities.
@@ -357,111 +356,107 @@ I grant permission for NY Ovals Cricket Academy to use photos or videos of the p
 I understand that all fees are non-refundable except in cases of program cancellation by NY Ovals Cricket Academy.
 
 By checking the box below, I acknowledge that I have read, understood, and agree to all terms of this waiver and release.
-  </textarea>
+      </textarea>
 
-  <label>
-    <input type="checkbox" name="waiver_agreed" value="Yes" required>
-    I agree to the waiver terms.
-  </label>
+      <label>
+        <input type="checkbox" name="waiver_agreed" value="Yes" required>
+        I agree to the waiver terms.
+      </label>
 
-  <button type="submit">Submit Registration</button>
-</form>
-
+      <button type="submit">Submit Registration</button>
+    </form>
   </div>
 
   <!-- PAYMENT -->
   <div id="payment" class="section">
     <h2>Camp Payment</h2>
     <p>Camp begins on <strong>July 14th</strong>. Please complete payment to secure your child's spot.</p>
-<form action="https://formsubmit.co/nycapitalsportsllc@gmail.com" method="POST">
 
-  <!-- Hidden FormSubmit Settings -->
-  <input type="hidden" name="_subject" value="New Camp Payment Submission">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_next" value="https://nyovals.github.io/nyovals/#payment">
+    <form action="https://formsubmit.co/nycapitalsportsllc@gmail.com" method="POST" enctype="multipart/form-data">
 
-  <label>Participant Name</label>
-  <input type="text" name="participant_name" required>
+      <input type="hidden" name="_subject" value="New Camp Payment Submission">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://nyovals.github.io/nyovals/#payment">
 
-  <label>Parent/Guardian Email</label>
-  <input type="email" name="parent_email" required>
+      <label>Participant Name</label>
+      <input type="text" name="participant_name" required>
 
-  <label>Select Fee Type</label>
-  <select id="fee_type" name="fee_type" required onchange="updateAmount()">
-    <option value="">Select</option>
-    <option value="650">Early Bird — $650 (before July 1st)</option>
-    <option value="720">Standard — $720 (on or after July 1st)</option>
-    <option value="225">Weekly — $225 per week</option>
-      <option value="manual">Enter Amount Manually</option>
-  </select>
+      <label>Parent/Guardian Email</label>
+      <input type="email" name="parent_email" required>
 
-  <label>Payment Amount (USD)</label>
-  <input type="text" id="amount" name="amount" readonly>
+      <label>Select Fee Type</label>
+      <select id="fee_type" name="fee_type" required onchange="updateAmount()">
+        <option value="">Select</option>
+        <option value="650">Early Bird — $650 (before July 1st)</option>
+        <option value="720">Standard — $720 (on or after July 1st)</option>
+        <option value="225">Weekly — $225 per week</option>
+        <option value="manual">Enter Amount Manually</option>
+      </select>
 
-  <label>Payment Method</label>
-  <select name="payment_method" required>
-    <option value="">Select a method</option>
-    <option value="credit_card">Credit/Debit Card</option>
-    <option value="zelle">Zelle</option>
-    <option value="paypal">PayPal</option>
-  </select>
+      <label>Payment Amount (USD)</label>
+      <input type="number" id="amount" name="amount" min="1" step="0.01" required readonly>
 
-  <p><strong>Zelle:</strong> Send to <strong>gatparajini@gmail.com</strong><br>
-  Include participant name in the memo.</p>
+      <div style="background:#f0fff0; padding:15px; border-left:5px solid #0b7a2a; margin-top:20px;">
+        <h3>Zelle Payment</h3>
+        <p>
+          Send payment to: <strong>gatparajini@gmail.com</strong><br>
+          Include participant name in the memo.
+        </p>
+      </div>
 
-  <button type="submit">Submit Payment</button>
-</form>
-    
-<script>
-  function updateAmount() {
-    const fee = document.getElementById("fee_type").value;
-    const amountField = document.getElementById("amount");
+      <label style="margin-top:20px;">Upload Payment Screenshot (optional)</label>
+      <input type="file" name="payment_proof" accept="image/*">
 
-    if (fee === "manual") {
-      amountField.value = "";
-      amountField.readOnly = false;
-    } else {
-      amountField.value = fee;
-      amountField.readOnly = true;
-    }
-  }
-</script>
+      <button type="submit">Submit Payment</button>
+    </form>
 
+    <script>
+      function updateAmount() {
+        const fee = document.getElementById("fee_type").value;
+        const amountField = document.getElementById("amount");
+
+        if (fee === "manual") {
+          amountField.value = "";
+          amountField.readOnly = false;
+        } else {
+          amountField.value = fee;
+          amountField.readOnly = true;
+        }
+      }
+    </script>
   </div>
 
   <!-- CONTACT -->
- <div id="contact" class="section">
-  <h2>Contact Us</h2>
+  <div id="contact" class="section">
+    <h2>Contact Us</h2>
 
-  <ul>
-    <li>Coach: Kiran Vishnu — (518) 698‑5091</li>
-  </ul>
+    <ul>
+      <li>Coach: Kiran Vishnu — (518) 698‑5091</li>
+    </ul>
 
-  <p><strong>Email:</strong> nycaptialsportsllc@gmail.com</p>
+    <p><strong>Email:</strong> nycaptialsportsllc@gmail.com</p>
 
-  <h3>Camp Location</h3>
-  <p>
-    <strong>NY Ovals</strong><br>
-   	4281 Amsterdam Rd<br>
-    Schenectady, NY,
-United States, 12302
-  </p>
-</div>
-
+    <h3>Camp Location</h3>
+    <p>
+      <strong>NY Ovals</strong><br>
+      4281 Amsterdam Rd<br>
+      Schenectady, NY, United States, 12302
+    </p>
+  </div>
 
   <!-- FOOTER -->
   <footer>
     © 2026 NY Ovals Cricket Academy — All Rights Reserved
   </footer>
 
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-      .then(reg => console.log('Service worker registered', reg))
-      .catch(err => console.log('Service worker registration failed', err));
-  }
-</script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('Service worker registered', reg))
+        .catch(err => console.log('Service worker registration failed', err));
+    }
+  </script>
 
 </body>
 </html>
